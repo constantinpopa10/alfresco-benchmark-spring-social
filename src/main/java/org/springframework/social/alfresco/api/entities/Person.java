@@ -18,6 +18,8 @@ package org.springframework.social.alfresco.api.entities;
 
 import java.util.Date;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
 
 /**
  * A person entity describes the user as they are known to Alfresco.
@@ -25,6 +27,7 @@ import java.util.Date;
  * @author jottley
  * 
  */
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class Person
 {
     private boolean enabled;
